@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:orientation="vertical">
+
+	<!-- Давайте элементам вашего лейяута говорящие имена -->
+	<!-- Читайте конвенцию по именованию разных ресурсов -->
+	<!-- В атрибуте android:text передайте ссылку на соответствующий ресурс. Никакого хардкода! -->
+	<!-- Размер текста указывается в sp, размер полей и изображений — в dp -->
+	<TextView
+		android:id="@+id/textview_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/offer"
+		android:textSize="45sp"/>
+
+	<!-- В атрибуте android:entries передайте ссылку на массив -->
+	<Spinner
+		android:id="@+id/spinner_for_colors"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:entries="@array/color_selection"/>
+
+	<!-- В атрибуте android:text передайте ссылку на соответствующий ресурс. Никакого хардкода! -->
+	<Button
+		android:id="@+id/button_show_description"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/result"/>
+
+	<!-- В атрибуте android:text передайте ссылку на соответствующий ресурс. Никакого хардкода! -->
+	<TextView
+		android:id="@+id/textview_description"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/effect"/>
+</LinearLayout>
